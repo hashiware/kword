@@ -24,6 +24,7 @@ To initiate NPM Workspaces, create a package.json file at the root of your Monor
 
 For instance, consider the following simplified package.json snippet:
 
+{% code title="package.json" %}
 ```json
 {
   "name": "my-monorepo",
@@ -33,6 +34,7 @@ For instance, consider the following simplified package.json snippet:
   ]
 }
 ```
+{% endcode %}
 
 In this example, all subdirectories within the "projects" directory are treated as workspace projects.
 
