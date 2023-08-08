@@ -48,7 +48,7 @@ This approach offers a convenient and flexible way to manage various projects wi
 1. **Default Behavior**: Without specifying the --workspace option, commands executed at the root level of the Monorepo will automatically apply to all projects within the workspace. This is advantageous when you want changes to propagate across all projects simultaneously.
 2. **Selective Targeting**: To narrow down the scope of a command to a specific workspace project, you can utilize the --workspace or -w option followed by the name of the target workspace. This feature is particularly useful when you want to isolate changes, installations, or other actions to a single project.
 
-Let's assume our current directory as below:
+Consider the following directory structure as our current setup:
 
 ```
 workspace
@@ -56,10 +56,10 @@ workspace
 └── projects
 ```
 
-We have already populdate the package.json as above in our workspace. Now we will create two new projects with following commands
+The `package.json` in our workspace has already been configured as shown above. Now, let's proceed to create two new projects using the following commands:
 
 ```bash
 npx create-next-app 
-npx create-next-app
+npx create-next-app 
 ```
 
