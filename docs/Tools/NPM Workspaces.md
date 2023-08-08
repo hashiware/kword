@@ -1,5 +1,5 @@
 When embarking on a JavaScript project, it's common to begin with boilerplate templates that set up an NPM project structure along with some initial code. 
-Tools like `npx create-next-app` or `npx create-next-app@latest` streamline this process by swiftly creating the foundation for your project.
+Tools like `npx create-next-app` or `npx create-remix` streamline this process by swiftly creating the foundation for your project.
 
 During the development phase, the frequent use of `npm install` becomes routine as you add and manage project dependencies.
 
@@ -47,4 +47,19 @@ This approach offers a convenient and flexible way to manage various projects wi
 
 1. **Default Behavior**: Without specifying the --workspace option, commands executed at the root level of the Monorepo will automatically apply to all projects within the workspace. This is advantageous when you want changes to propagate across all projects simultaneously.
 2. **Selective Targeting**: To narrow down the scope of a command to a specific workspace project, you can utilize the --workspace or -w option followed by the name of the target workspace. This feature is particularly useful when you want to isolate changes, installations, or other actions to a single project.
+
+Let's assume our current directory as below:
+
+```
+workspace
+├── package.json
+└── projects
+```
+
+We have already populdate the package.json as above in our workspace. Now we will create two new projects with following commands
+
+```bash
+npx create-next-app 
+npx create-next-app
+```
 
